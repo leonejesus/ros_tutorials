@@ -1,0 +1,8 @@
+prefix=/home/leone/catkin_ws/devel
+
+Name: dummy
+Description: Description of dummy
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/leone/catkin_ws/devel/lib 
+Requires: 

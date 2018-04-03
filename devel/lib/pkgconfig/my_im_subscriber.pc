@@ -1,0 +1,8 @@
+prefix=/home/leone/catkin_ws/devel
+
+Name: my_im_subscriber
+Description: Description of my_im_subscriber
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/leone/catkin_ws/devel/lib 
+Requires: cv_bridge image_transport roscpp sensor_msgs std_msgs

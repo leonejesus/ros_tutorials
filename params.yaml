@@ -1,0 +1,12 @@
+background_b: 255
+background_g: 86
+background_r: 150
+rosdistro: 'kinetic
+
+  '
+roslaunch:
+  uris: {host_leone__34379: 'http://leone:34379/'}
+rosversion: '1.12.13
+
+  '
+run_id: 49a1c14e-2d0c-11e8-9361-386077e0017e

@@ -1,0 +1,8 @@
+<launch>
+
+  <param name="cam_device" value="0" type="int"/>  
+  <node pkg="my_image_mannager" name="cam1" type="cam_publisher"/>
+
+  <node pkg="my_image_mannager" name="cam2" type="cam_subscriber"/>
+  
+</launch>

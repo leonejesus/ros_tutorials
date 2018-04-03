@@ -1,0 +1,8 @@
+prefix=/home/leone/catkin_ws/devel
+
+Name: motor_cam_tutorial
+Description: Description of motor_cam_tutorial
+Version: 0.0.0
+Cflags: -I/home/leone/catkin_ws/devel/include
+Libs: -L/home/leone/catkin_ws/devel/lib 
+Requires: cv_bridge image_transport roscpp sensor_msgs std_msgs

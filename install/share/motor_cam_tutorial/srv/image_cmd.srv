@@ -1,0 +1,5 @@
+bool cmd
+string path
+float32  angle
+---
+int32 result

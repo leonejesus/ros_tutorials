@@ -1,0 +1,8 @@
+prefix=/home/leone/catkin_ws/devel
+
+Name: image_test
+Description: Description of image_test
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/leone/catkin_ws/devel/lib 
+Requires: image_transport roscpp cv_bridge sensor_msgs std_msgs
