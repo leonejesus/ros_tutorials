@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/motor_cam_tutorial_generate_messages_nodejs"
+  "/home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/msg/mot_cmd.js"
   "/home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/srv/image_cmd.js"
 )
 

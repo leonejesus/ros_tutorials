@@ -53,22 +53,38 @@ CMAKE_BINARY_DIR = /home/leone/catkin_ws/build
 # Include the progress variables for this target.
 include motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py.dir/progress.make
 
+motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py: /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/_mot_cmd.py
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py: /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/_image_cmd.py
+motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py: /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/__init__.py
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py: /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/__init__.py
 
 
+/home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/_mot_cmd.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/_mot_cmd.py: /home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG motor_cam_tutorial/mot_cmd"
+	cd /home/leone/catkin_ws/build/motor_cam_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg -Imotor_cam_tutorial:/home/leone/catkin_ws/src/motor_cam_tutorial/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p motor_cam_tutorial -o /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg
+
 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/_image_cmd.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/_image_cmd.py: /home/leone/catkin_ws/src/motor_cam_tutorial/srv/image_cmd.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV motor_cam_tutorial/image_cmd"
-	cd /home/leone/catkin_ws/build/motor_cam_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/leone/catkin_ws/src/motor_cam_tutorial/srv/image_cmd.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p motor_cam_tutorial -o /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV motor_cam_tutorial/image_cmd"
+	cd /home/leone/catkin_ws/build/motor_cam_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/leone/catkin_ws/src/motor_cam_tutorial/srv/image_cmd.srv -Imotor_cam_tutorial:/home/leone/catkin_ws/src/motor_cam_tutorial/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p motor_cam_tutorial -o /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv
+
+/home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/__init__.py: /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/_mot_cmd.py
+/home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/__init__.py: /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/_image_cmd.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for motor_cam_tutorial"
+	cd /home/leone/catkin_ws/build/motor_cam_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg --initpy
 
 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
+/home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/__init__.py: /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/_mot_cmd.py
 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/__init__.py: /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/_image_cmd.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for motor_cam_tutorial"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for motor_cam_tutorial"
 	cd /home/leone/catkin_ws/build/motor_cam_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv --initpy
 
 motor_cam_tutorial_generate_messages_py: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py
+motor_cam_tutorial_generate_messages_py: /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/_mot_cmd.py
 motor_cam_tutorial_generate_messages_py: /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/_image_cmd.py
+motor_cam_tutorial_generate_messages_py: /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/__init__.py
 motor_cam_tutorial_generate_messages_py: /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/__init__.py
 motor_cam_tutorial_generate_messages_py: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py.dir/build.make
 

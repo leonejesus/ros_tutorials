@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/motor_cam_tutorial_generate_messages_py"
+  "/home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/_mot_cmd.py"
   "/home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/_image_cmd.py"
+  "/home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/__init__.py"
   "/home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/__init__.py"
 )
 

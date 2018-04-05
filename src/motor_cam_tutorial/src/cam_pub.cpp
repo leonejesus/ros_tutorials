@@ -13,7 +13,7 @@ int main(int argc, char** argv)
   ros::NodeHandle nh;
   image_transport::ImageTransport it(nh);
   //  image_transport::Publisher pub = it.advertise("image", 3);
-  image_transport::Publisher pub = it.advertise("camera/image", 1);
+  image_transport::Publisher pub = it.advertise("image_pub", 1);
   int cam_device;
   if (argc < 2){
 	  nh.param("cam_device", cam_device, cam_device);

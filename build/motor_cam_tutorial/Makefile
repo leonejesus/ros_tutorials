@@ -112,6 +112,16 @@ install/strip/fast: install/strip
 
 .PHONY : install/strip/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -122,16 +132,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -256,6 +256,36 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
+motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/rule:
+	cd /home/leone/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/rule
+.PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/rule
+
+# Convenience name for target.
+motor_cam_tutorial_genpy: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/rule
+
+.PHONY : motor_cam_tutorial_genpy
+
+# fast build rule for target.
+motor_cam_tutorial_genpy/fast:
+	cd /home/leone/catkin_ws/build && $(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build
+.PHONY : motor_cam_tutorial_genpy/fast
+
+# Convenience name for target.
+motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
+	cd /home/leone/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+.PHONY : motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	cd /home/leone/catkin_ws/build && $(MAKE) -f motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
 motor_cam_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
 	cd /home/leone/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : motor_cam_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
@@ -331,36 +361,6 @@ _motor_cam_tutorial_generate_messages_check_deps_image_cmd/fast:
 .PHONY : _motor_cam_tutorial_generate_messages_check_deps_image_cmd/fast
 
 # Convenience name for target.
-motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/leone/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-.PHONY : motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_eus: motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_eus
-
-# fast build rule for target.
-sensor_msgs_generate_messages_eus/fast:
-	cd /home/leone/catkin_ws/build && $(MAKE) -f motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-.PHONY : sensor_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/rule:
-	cd /home/leone/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/rule
-.PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/rule
-
-# Convenience name for target.
-motor_cam_tutorial_genpy: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/rule
-
-.PHONY : motor_cam_tutorial_genpy
-
-# fast build rule for target.
-motor_cam_tutorial_genpy/fast:
-	cd /home/leone/catkin_ws/build && $(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build
-.PHONY : motor_cam_tutorial_genpy/fast
-
-# Convenience name for target.
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_cpp.dir/rule:
 	cd /home/leone/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_cpp.dir/rule
 .PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_cpp.dir/rule
@@ -406,6 +406,21 @@ motor_cam_tutorial_gennodejs/fast:
 .PHONY : motor_cam_tutorial_gennodejs/fast
 
 # Convenience name for target.
+motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/rule:
+	cd /home/leone/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/rule
+.PHONY : motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/rule
+
+# Convenience name for target.
+_motor_cam_tutorial_generate_messages_check_deps_mot_cmd: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/rule
+
+.PHONY : _motor_cam_tutorial_generate_messages_check_deps_mot_cmd
+
+# fast build rule for target.
+_motor_cam_tutorial_generate_messages_check_deps_mot_cmd/fast:
+	cd /home/leone/catkin_ws/build && $(MAKE) -f motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/build.make motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/build
+.PHONY : _motor_cam_tutorial_generate_messages_check_deps_mot_cmd/fast
+
+# Convenience name for target.
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/rule:
 	cd /home/leone/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/rule
 .PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/rule
@@ -419,6 +434,21 @@ motor_cam_tutorial_generate_messages_eus: motor_cam_tutorial/CMakeFiles/motor_ca
 motor_cam_tutorial_generate_messages_eus/fast:
 	cd /home/leone/catkin_ws/build && $(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/build
 .PHONY : motor_cam_tutorial_generate_messages_eus/fast
+
+# Convenience name for target.
+motor_cam_tutorial/CMakeFiles/controller_msg.dir/rule:
+	cd /home/leone/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/controller_msg.dir/rule
+.PHONY : motor_cam_tutorial/CMakeFiles/controller_msg.dir/rule
+
+# Convenience name for target.
+controller_msg: motor_cam_tutorial/CMakeFiles/controller_msg.dir/rule
+
+.PHONY : controller_msg
+
+# fast build rule for target.
+controller_msg/fast:
+	cd /home/leone/catkin_ws/build && $(MAKE) -f motor_cam_tutorial/CMakeFiles/controller_msg.dir/build.make motor_cam_tutorial/CMakeFiles/controller_msg.dir/build
+.PHONY : controller_msg/fast
 
 # Convenience name for target.
 motor_cam_tutorial/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
@@ -579,6 +609,33 @@ src/controller.cpp.s:
 	cd /home/leone/catkin_ws/build && $(MAKE) -f motor_cam_tutorial/CMakeFiles/controller.dir/build.make motor_cam_tutorial/CMakeFiles/controller.dir/src/controller.cpp.s
 .PHONY : src/controller.cpp.s
 
+src/controller_msg.o: src/controller_msg.cpp.o
+
+.PHONY : src/controller_msg.o
+
+# target to build an object file
+src/controller_msg.cpp.o:
+	cd /home/leone/catkin_ws/build && $(MAKE) -f motor_cam_tutorial/CMakeFiles/controller_msg.dir/build.make motor_cam_tutorial/CMakeFiles/controller_msg.dir/src/controller_msg.cpp.o
+.PHONY : src/controller_msg.cpp.o
+
+src/controller_msg.i: src/controller_msg.cpp.i
+
+.PHONY : src/controller_msg.i
+
+# target to preprocess a source file
+src/controller_msg.cpp.i:
+	cd /home/leone/catkin_ws/build && $(MAKE) -f motor_cam_tutorial/CMakeFiles/controller_msg.dir/build.make motor_cam_tutorial/CMakeFiles/controller_msg.dir/src/controller_msg.cpp.i
+.PHONY : src/controller_msg.cpp.i
+
+src/controller_msg.s: src/controller_msg.cpp.s
+
+.PHONY : src/controller_msg.s
+
+# target to generate assembly for a file
+src/controller_msg.cpp.s:
+	cd /home/leone/catkin_ws/build && $(MAKE) -f motor_cam_tutorial/CMakeFiles/controller_msg.dir/build.make motor_cam_tutorial/CMakeFiles/controller_msg.dir/src/controller_msg.cpp.s
+.PHONY : src/controller_msg.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -596,19 +653,21 @@ help:
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... list_install_components"
+	@echo "... motor_cam_tutorial_genpy"
+	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... edit_cache"
 	@echo "... motor_cam_tutorial_generate_messages"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... _motor_cam_tutorial_generate_messages_check_deps_image_cmd"
-	@echo "... list_install_components"
-	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... motor_cam_tutorial_genpy"
 	@echo "... motor_cam_tutorial_generate_messages_cpp"
 	@echo "... motor_cam_tutorial_gencpp"
 	@echo "... motor_cam_tutorial_gennodejs"
+	@echo "... _motor_cam_tutorial_generate_messages_check_deps_mot_cmd"
 	@echo "... motor_cam_tutorial_generate_messages_eus"
+	@echo "... controller_msg"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... motor_cam_tutorial_generate_messages_lisp"
 	@echo "... controller"
@@ -622,6 +681,9 @@ help:
 	@echo "... src/controller.o"
 	@echo "... src/controller.i"
 	@echo "... src/controller.s"
+	@echo "... src/controller_msg.o"
+	@echo "... src/controller_msg.i"
+	@echo "... src/controller_msg.s"
 .PHONY : help
 
 

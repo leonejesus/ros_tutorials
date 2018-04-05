@@ -1,11 +1,11 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = ""
+messages_str = "/home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg"
 services_str = "/home/leone/catkin_ws/src/motor_cam_tutorial/srv/image_cmd.srv"
 pkg_name = "motor_cam_tutorial"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"
-dep_include_paths_str = "std_msgs;/opt/ros/kinetic/share/std_msgs/cmake/../msg"
+dep_include_paths_str = "motor_cam_tutorial;/home/leone/catkin_ws/src/motor_cam_tutorial/msg;std_msgs;/opt/ros/kinetic/share/std_msgs/cmake/../msg"
 PYTHON_EXECUTABLE = "/usr/bin/python"
 package_has_static_sources = '' == 'TRUE'
 genmsg_check_deps_script = "/opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py"

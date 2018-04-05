@@ -777,6 +777,32 @@ sensor_msgs_generate_messages_py/fast:
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named motor_cam_tutorial_genpy
+
+# Build rule for target.
+motor_cam_tutorial_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial_genpy
+.PHONY : motor_cam_tutorial_genpy
+
+# fast build rule for target.
+motor_cam_tutorial_genpy/fast:
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build
+.PHONY : motor_cam_tutorial_genpy/fast
+
+#=============================================================================
+# Target rules for targets named sensor_msgs_generate_messages_eus
+
+# Build rule for target.
+sensor_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_eus
+.PHONY : sensor_msgs_generate_messages_eus
+
+# fast build rule for target.
+sensor_msgs_generate_messages_eus/fast:
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+.PHONY : sensor_msgs_generate_messages_eus/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -842,32 +868,6 @@ _motor_cam_tutorial_generate_messages_check_deps_image_cmd/fast:
 .PHONY : _motor_cam_tutorial_generate_messages_check_deps_image_cmd/fast
 
 #=============================================================================
-# Target rules for targets named sensor_msgs_generate_messages_eus
-
-# Build rule for target.
-sensor_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sensor_msgs_generate_messages_eus
-.PHONY : sensor_msgs_generate_messages_eus
-
-# fast build rule for target.
-sensor_msgs_generate_messages_eus/fast:
-	$(MAKE) -f motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-.PHONY : sensor_msgs_generate_messages_eus/fast
-
-#=============================================================================
-# Target rules for targets named motor_cam_tutorial_genpy
-
-# Build rule for target.
-motor_cam_tutorial_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial_genpy
-.PHONY : motor_cam_tutorial_genpy
-
-# fast build rule for target.
-motor_cam_tutorial_genpy/fast:
-	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build
-.PHONY : motor_cam_tutorial_genpy/fast
-
-#=============================================================================
 # Target rules for targets named motor_cam_tutorial_generate_messages_cpp
 
 # Build rule for target.
@@ -907,6 +907,19 @@ motor_cam_tutorial_gennodejs/fast:
 .PHONY : motor_cam_tutorial_gennodejs/fast
 
 #=============================================================================
+# Target rules for targets named _motor_cam_tutorial_generate_messages_check_deps_mot_cmd
+
+# Build rule for target.
+_motor_cam_tutorial_generate_messages_check_deps_mot_cmd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _motor_cam_tutorial_generate_messages_check_deps_mot_cmd
+.PHONY : _motor_cam_tutorial_generate_messages_check_deps_mot_cmd
+
+# fast build rule for target.
+_motor_cam_tutorial_generate_messages_check_deps_mot_cmd/fast:
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/build.make motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/build
+.PHONY : _motor_cam_tutorial_generate_messages_check_deps_mot_cmd/fast
+
+#=============================================================================
 # Target rules for targets named motor_cam_tutorial_generate_messages_eus
 
 # Build rule for target.
@@ -918,6 +931,19 @@ motor_cam_tutorial_generate_messages_eus: cmake_check_build_system
 motor_cam_tutorial_generate_messages_eus/fast:
 	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/build
 .PHONY : motor_cam_tutorial_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named controller_msg
+
+# Build rule for target.
+controller_msg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 controller_msg
+.PHONY : controller_msg
+
+# fast build rule for target.
+controller_msg/fast:
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/controller_msg.dir/build.make motor_cam_tutorial/CMakeFiles/controller_msg.dir/build
+.PHONY : controller_msg/fast
 
 #=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
@@ -4632,17 +4658,19 @@ help:
 	@echo "... geometry_msgs_generate_messages_eus"
 	@echo "... sensor_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_py"
+	@echo "... motor_cam_tutorial_genpy"
+	@echo "... sensor_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... sensor_msgs_generate_messages_nodejs"
 	@echo "... motor_cam_tutorial_generate_messages"
 	@echo "... sensor_msgs_generate_messages_lisp"
 	@echo "... _motor_cam_tutorial_generate_messages_check_deps_image_cmd"
-	@echo "... sensor_msgs_generate_messages_eus"
-	@echo "... motor_cam_tutorial_genpy"
 	@echo "... motor_cam_tutorial_generate_messages_cpp"
 	@echo "... motor_cam_tutorial_gencpp"
 	@echo "... motor_cam_tutorial_gennodejs"
+	@echo "... _motor_cam_tutorial_generate_messages_check_deps_mot_cmd"
 	@echo "... motor_cam_tutorial_generate_messages_eus"
+	@echo "... controller_msg"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... motor_cam_tutorial_generate_messages_lisp"
 	@echo "... controller"

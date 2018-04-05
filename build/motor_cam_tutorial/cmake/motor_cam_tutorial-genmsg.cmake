@@ -1,8 +1,8 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "motor_cam_tutorial: 0 messages, 1 services")
+message(STATUS "motor_cam_tutorial: 1 messages, 1 services")
 
-set(MSG_I_FLAGS "-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Imotor_cam_tutorial:/home/leone/catkin_ws/src/motor_cam_tutorial/msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -22,12 +22,23 @@ add_custom_target(_motor_cam_tutorial_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motor_cam_tutorial" "/home/leone/catkin_ws/src/motor_cam_tutorial/srv/image_cmd.srv" ""
 )
 
+get_filename_component(_filename "/home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg" NAME_WE)
+add_custom_target(_motor_cam_tutorial_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "motor_cam_tutorial" "/home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
 
 ### Section generating for lang: gencpp
 ### Generating Messages
+_generate_msg_cpp(motor_cam_tutorial
+  "/home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/motor_cam_tutorial
+)
 
 ### Generating Services
 _generate_srv_cpp(motor_cam_tutorial
@@ -51,6 +62,8 @@ add_dependencies(motor_cam_tutorial_generate_messages motor_cam_tutorial_generat
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/leone/catkin_ws/src/motor_cam_tutorial/srv/image_cmd.srv" NAME_WE)
 add_dependencies(motor_cam_tutorial_generate_messages_cpp _motor_cam_tutorial_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg" NAME_WE)
+add_dependencies(motor_cam_tutorial_generate_messages_cpp _motor_cam_tutorial_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(motor_cam_tutorial_gencpp)
@@ -61,6 +74,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS motor_cam_tutorial_generate_message
 
 ### Section generating for lang: geneus
 ### Generating Messages
+_generate_msg_eus(motor_cam_tutorial
+  "/home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/motor_cam_tutorial
+)
 
 ### Generating Services
 _generate_srv_eus(motor_cam_tutorial
@@ -84,6 +103,8 @@ add_dependencies(motor_cam_tutorial_generate_messages motor_cam_tutorial_generat
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/leone/catkin_ws/src/motor_cam_tutorial/srv/image_cmd.srv" NAME_WE)
 add_dependencies(motor_cam_tutorial_generate_messages_eus _motor_cam_tutorial_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg" NAME_WE)
+add_dependencies(motor_cam_tutorial_generate_messages_eus _motor_cam_tutorial_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(motor_cam_tutorial_geneus)
@@ -94,6 +115,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS motor_cam_tutorial_generate_message
 
 ### Section generating for lang: genlisp
 ### Generating Messages
+_generate_msg_lisp(motor_cam_tutorial
+  "/home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/motor_cam_tutorial
+)
 
 ### Generating Services
 _generate_srv_lisp(motor_cam_tutorial
@@ -117,6 +144,8 @@ add_dependencies(motor_cam_tutorial_generate_messages motor_cam_tutorial_generat
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/leone/catkin_ws/src/motor_cam_tutorial/srv/image_cmd.srv" NAME_WE)
 add_dependencies(motor_cam_tutorial_generate_messages_lisp _motor_cam_tutorial_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg" NAME_WE)
+add_dependencies(motor_cam_tutorial_generate_messages_lisp _motor_cam_tutorial_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(motor_cam_tutorial_genlisp)
@@ -127,6 +156,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS motor_cam_tutorial_generate_message
 
 ### Section generating for lang: gennodejs
 ### Generating Messages
+_generate_msg_nodejs(motor_cam_tutorial
+  "/home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/motor_cam_tutorial
+)
 
 ### Generating Services
 _generate_srv_nodejs(motor_cam_tutorial
@@ -150,6 +185,8 @@ add_dependencies(motor_cam_tutorial_generate_messages motor_cam_tutorial_generat
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/leone/catkin_ws/src/motor_cam_tutorial/srv/image_cmd.srv" NAME_WE)
 add_dependencies(motor_cam_tutorial_generate_messages_nodejs _motor_cam_tutorial_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg" NAME_WE)
+add_dependencies(motor_cam_tutorial_generate_messages_nodejs _motor_cam_tutorial_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(motor_cam_tutorial_gennodejs)
@@ -160,6 +197,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS motor_cam_tutorial_generate_message
 
 ### Section generating for lang: genpy
 ### Generating Messages
+_generate_msg_py(motor_cam_tutorial
+  "/home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/motor_cam_tutorial
+)
 
 ### Generating Services
 _generate_srv_py(motor_cam_tutorial
@@ -182,6 +225,8 @@ add_dependencies(motor_cam_tutorial_generate_messages motor_cam_tutorial_generat
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/leone/catkin_ws/src/motor_cam_tutorial/srv/image_cmd.srv" NAME_WE)
+add_dependencies(motor_cam_tutorial_generate_messages_py _motor_cam_tutorial_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg" NAME_WE)
 add_dependencies(motor_cam_tutorial_generate_messages_py _motor_cam_tutorial_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

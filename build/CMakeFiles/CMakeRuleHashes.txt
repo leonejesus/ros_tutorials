@@ -1,7 +1,8 @@
 # Hashes of file build rules.
 6fb1a1dfe8a8b7692357f63ecf0cdd13 /home/leone/catkin_ws/devel/include/beginner_tutorials/AddTwoInts.h
 e4574c3547fdb512b551ad7562a03189 /home/leone/catkin_ws/devel/include/beginner_tutorials/Num.h
-0dec65cc418ff1a7a884e09a51250994 /home/leone/catkin_ws/devel/include/motor_cam_tutorial/image_cmd.h
+3f7c8e2a6752859a12d6696eed3a6764 /home/leone/catkin_ws/devel/include/motor_cam_tutorial/image_cmd.h
+383ba051ac2d411042a54b2ed6d2cb14 /home/leone/catkin_ws/devel/include/motor_cam_tutorial/mot_cmd.h
 b092233fb7c741efb63b3a6c8efd7496 /home/leone/catkin_ws/devel/include/opencv_apps/AddingImagesConfig.h
 17351804d13cfcfce6575498ad0b90bf /home/leone/catkin_ws/devel/include/opencv_apps/CamShiftConfig.h
 f5839d77ecd109a788bb1b0797f430e1 /home/leone/catkin_ws/devel/include/opencv_apps/Circle.h
@@ -65,8 +66,10 @@ d177840ed46dd7d498b0d60bec5532c2 /home/leone/catkin_ws/devel/include/opencv_apps
 81b3fd44796ed0ba529434efe4a124aa /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/__init__.py
 e1895c7380de95467dc7e7e009434ac1 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/_AddTwoInts.py
 66774b5044dd4d3a3a75685f64b0a445 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/__init__.py
+58a9cd4a4cfad5077b16d740844757fd /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/__init__.py
+1e7515ddc3eba333196047121bdc5b6a /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/msg/_mot_cmd.py
 0f6869c5d88a3863e00ea18108f59510 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/__init__.py
-48b3adc77470ac0e44e67a28f3967499 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/_image_cmd.py
+8cc44de0cebd1c3be44b37f2fa444b64 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/motor_cam_tutorial/srv/_image_cmd.py
 b34bf8e2516485d52b71472da1d0f3c7 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/opencv_apps/msg/_Circle.py
 1e47a8998b5b0db2916834912b97123e /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/opencv_apps/msg/_CircleArray.py
 371e60952ade39e77beb2d15e037a7c3 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/opencv_apps/msg/_CircleArrayStamped.py
@@ -103,7 +106,8 @@ e39232f964bb9e616c251b5d9d5f9292 /home/leone/catkin_ws/devel/lib/python2.7/dist-
 bf797ddd7d48b274893a538a9b099721 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/opencv_apps/srv/__init__.py
 dbe027cfe21bb96697ac5229e10d3511 /home/leone/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/msg/Num.lisp
 2135581d8b1d378cf05ff4ccb6a02ce9 /home/leone/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/srv/AddTwoInts.lisp
-12f981ab4956608289036f548bced322 /home/leone/catkin_ws/devel/share/common-lisp/ros/motor_cam_tutorial/srv/image_cmd.lisp
+542c58054cd689930ddccf8b542cd040 /home/leone/catkin_ws/devel/share/common-lisp/ros/motor_cam_tutorial/msg/mot_cmd.lisp
+96693adf20a3e29fbfa23a3f06bee73a /home/leone/catkin_ws/devel/share/common-lisp/ros/motor_cam_tutorial/srv/image_cmd.lisp
 11cc8f6940a8cc4042f4f6c3348fc690 /home/leone/catkin_ws/devel/share/common-lisp/ros/opencv_apps/msg/Circle.lisp
 ae638e19f4360d49a8bbdad882b0d506 /home/leone/catkin_ws/devel/share/common-lisp/ros/opencv_apps/msg/CircleArray.lisp
 1aac7bf9b19ba4d202c691d15040304a /home/leone/catkin_ws/devel/share/common-lisp/ros/opencv_apps/msg/CircleArrayStamped.lisp
@@ -138,7 +142,8 @@ fd79f6a240b33c2ce03acbfd506df771 /home/leone/catkin_ws/devel/share/common-lisp/r
 79e1d74b9fe44e52dbeaf176453103be /home/leone/catkin_ws/devel/share/common-lisp/ros/opencv_apps/srv/FaceRecognitionTrain.lisp
 f1f572ebf2a0f190ba26dc6a2a8b897c /home/leone/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/msg/Num.js
 22cb77ebf49063f27b1f44bccdb8dda6 /home/leone/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/srv/AddTwoInts.js
-ac6fb810c48a34a3cfb4185754892a3a /home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/srv/image_cmd.js
+2cf185ca0e76db607f225274ad49b7b3 /home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/msg/mot_cmd.js
+b10df201c7edbe04cfd3fbbc3dea7f89 /home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/srv/image_cmd.js
 ffb12972aed10b411a74ec23f150b7ff /home/leone/catkin_ws/devel/share/gennodejs/ros/opencv_apps/msg/Circle.js
 c584d137ed81d2172015aa07b0aa3aee /home/leone/catkin_ws/devel/share/gennodejs/ros/opencv_apps/msg/CircleArray.js
 64913df7bbd1a6eb77e280c9254788ba /home/leone/catkin_ws/devel/share/gennodejs/ros/opencv_apps/msg/CircleArrayStamped.js
@@ -175,7 +180,8 @@ e253f22d250dcd42b9bb82232c3b8ce4 /home/leone/catkin_ws/devel/share/gennodejs/ros
 6fa94891d9fc876d676264cfd611ed93 /home/leone/catkin_ws/devel/share/roseus/ros/beginner_tutorials/msg/Num.l
 aa7d160f9f6adbeab558e4fe479ad595 /home/leone/catkin_ws/devel/share/roseus/ros/beginner_tutorials/srv/AddTwoInts.l
 a33e893d0596b5a3d6e427885eb244c6 /home/leone/catkin_ws/devel/share/roseus/ros/motor_cam_tutorial/manifest.l
-04fa10e82e183513eea8120c36c18a8a /home/leone/catkin_ws/devel/share/roseus/ros/motor_cam_tutorial/srv/image_cmd.l
+dd809460a2bd053d97e3fd9c4de8291c /home/leone/catkin_ws/devel/share/roseus/ros/motor_cam_tutorial/msg/mot_cmd.l
+40b6378eadda6fe8e675ca2da5b1a10b /home/leone/catkin_ws/devel/share/roseus/ros/motor_cam_tutorial/srv/image_cmd.l
 03886ba550aad2bca05b04f2581f7b63 /home/leone/catkin_ws/devel/share/roseus/ros/opencv_apps/manifest.l
 4cbd0c1df012cec3c1067443c6adfbd5 /home/leone/catkin_ws/devel/share/roseus/ros/opencv_apps/msg/Circle.l
 790900eced2e2d80c2c755a8acd3e24f /home/leone/catkin_ws/devel/share/roseus/ros/opencv_apps/msg/CircleArray.l
@@ -220,6 +226,7 @@ cc4ebb7f90817bca7247f54bf494ee51 beginner_tutorials/CMakeFiles/_beginner_tutoria
 640d4134f20ef6dba2c7297c2c455ee6 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_nodejs
 640d4134f20ef6dba2c7297c2c455ee6 beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_py
 8faabe31bf46d7e1c4460174ce3a2dd1 motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_image_cmd
+0bff5f5570dfc2dffc479a60102dd489 motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd
 6a5fdc7e14a4c7305619ceb40d51ff03 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_cpp
 6a5fdc7e14a4c7305619ceb40d51ff03 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus
 6a5fdc7e14a4c7305619ceb40d51ff03 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_lisp

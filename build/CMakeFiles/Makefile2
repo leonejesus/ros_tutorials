@@ -103,7 +103,7 @@ CMakeFiles/run_tests.dir/all: opencv_apps/CMakeFiles/_run_tests_opencv_apps.dir/
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : CMakeFiles/run_tests.dir/rule
@@ -171,7 +171,7 @@ CMakeFiles/tests.dir/all: opencv_apps/test/CMakeFiles/face_detector_withface_tes
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
@@ -1530,6 +1530,7 @@ dummy/preinstall:
 # Convenience name for "all" pass in the directory.
 motor_cam_tutorial/all: motor_cam_tutorial/CMakeFiles/cam_pub.dir/all
 motor_cam_tutorial/all: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages.dir/all
+motor_cam_tutorial/all: motor_cam_tutorial/CMakeFiles/controller_msg.dir/all
 motor_cam_tutorial/all: motor_cam_tutorial/CMakeFiles/controller.dir/all
 
 .PHONY : motor_cam_tutorial/all
@@ -1541,17 +1542,19 @@ motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/geometry_msgs_generate_m
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/geometry_msgs_generate_messages_eus.dir/clean
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/clean
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
+motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/clean
+motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/clean
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages.dir/clean
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/clean
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_image_cmd.dir/clean
-motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
-motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/clean
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_cpp.dir/clean
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_gencpp.dir/clean
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_gennodejs.dir/clean
+motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/clean
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/clean
+motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/controller_msg.dir/clean
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_lisp.dir/clean
 motor_cam_tutorial/clean: motor_cam_tutorial/CMakeFiles/controller.dir/clean
@@ -1765,6 +1768,70 @@ clean: motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_py.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir
+
+# All Build rule for target.
+motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/all: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py.dir/all
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/depend
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target motor_cam_tutorial_genpy"
+.PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+.PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/rule
+
+# Convenience name for target.
+motor_cam_tutorial_genpy: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/rule
+
+.PHONY : motor_cam_tutorial_genpy
+
+# clean rule for target.
+motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/clean:
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/clean
+.PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/clean
+
+# clean rule for target.
+clean: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir
+
+# All Build rule for target.
+motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
+.PHONY : motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+.PHONY : motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+sensor_msgs_generate_messages_eus: motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+
+.PHONY : sensor_msgs_generate_messages_eus
+
+# clean rule for target.
+motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+.PHONY : motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+
+# clean rule for target.
+clean: motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target motor_cam_tutorial/CMakeFiles/geometry_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
@@ -1849,7 +1916,7 @@ all: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages.dir/rule
@@ -1934,75 +2001,12 @@ clean: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir
-
-# All Build rule for target.
-motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target sensor_msgs_generate_messages_eus"
-.PHONY : motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-
-# Build rule for subdir invocation for target.
-motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
-.PHONY : motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_eus: motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_eus
-
-# clean rule for target.
-motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
-.PHONY : motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
-
-# clean rule for target.
-clean: motor_cam_tutorial/CMakeFiles/sensor_msgs_generate_messages_eus.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir
-
-# All Build rule for target.
-motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/all: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py.dir/all
-	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/depend
-	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target motor_cam_tutorial_genpy"
-.PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/all
-
-# Build rule for subdir invocation for target.
-motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
-.PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/rule
-
-# Convenience name for target.
-motor_cam_tutorial_genpy: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/rule
-
-.PHONY : motor_cam_tutorial_genpy
-
-# clean rule for target.
-motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/clean:
-	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/clean
-.PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/clean
-
-# clean rule for target.
-clean: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genpy.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Target rules for target motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_cpp.dir
 
 # All Build rule for target.
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_cpp.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_cpp.dir/all: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_image_cmd.dir/all
+motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_cpp.dir/all: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/all
 	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_cpp.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_cpp.dir/depend
 	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_cpp.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target motor_cam_tutorial_generate_messages_cpp"
@@ -2095,19 +2099,52 @@ clean: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_gennodejs.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir
+
+# All Build rule for target.
+motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/all:
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/build.make motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/depend
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/build.make motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target _motor_cam_tutorial_generate_messages_check_deps_mot_cmd"
+.PHONY : motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/all
+
+# Build rule for subdir invocation for target.
+motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+.PHONY : motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/rule
+
+# Convenience name for target.
+_motor_cam_tutorial_generate_messages_check_deps_mot_cmd: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/rule
+
+.PHONY : _motor_cam_tutorial_generate_messages_check_deps_mot_cmd
+
+# clean rule for target.
+motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/clean:
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/build.make motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/clean
+.PHONY : motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/clean
+
+# clean rule for target.
+clean: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir
 
 # All Build rule for target.
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/all: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_image_cmd.dir/all
+motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/all: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/all
 	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/depend
 	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target motor_cam_tutorial_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=24 "Built target motor_cam_tutorial_generate_messages_eus"
 .PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/rule
@@ -2124,6 +2161,43 @@ motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/clean
 
 # clean rule for target.
 clean: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_eus.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target motor_cam_tutorial/CMakeFiles/controller_msg.dir
+
+# All Build rule for target.
+motor_cam_tutorial/CMakeFiles/controller_msg.dir/all: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_cpp.dir/all
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/controller_msg.dir/build.make motor_cam_tutorial/CMakeFiles/controller_msg.dir/depend
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/controller_msg.dir/build.make motor_cam_tutorial/CMakeFiles/controller_msg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target controller_msg"
+.PHONY : motor_cam_tutorial/CMakeFiles/controller_msg.dir/all
+
+# Include target in all.
+all: motor_cam_tutorial/CMakeFiles/controller_msg.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+motor_cam_tutorial/CMakeFiles/controller_msg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/controller_msg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+.PHONY : motor_cam_tutorial/CMakeFiles/controller_msg.dir/rule
+
+# Convenience name for target.
+controller_msg: motor_cam_tutorial/CMakeFiles/controller_msg.dir/rule
+
+.PHONY : controller_msg
+
+# clean rule for target.
+motor_cam_tutorial/CMakeFiles/controller_msg.dir/clean:
+	$(MAKE) -f motor_cam_tutorial/CMakeFiles/controller_msg.dir/build.make motor_cam_tutorial/CMakeFiles/controller_msg.dir/clean
+.PHONY : motor_cam_tutorial/CMakeFiles/controller_msg.dir/clean
+
+# clean rule for target.
+clean: motor_cam_tutorial/CMakeFiles/controller_msg.dir/clean
 
 .PHONY : clean
 
@@ -2165,9 +2239,10 @@ clean: motor_cam_tutorial/CMakeFiles/geometry_msgs_generate_messages_py.dir/clea
 # All Build rule for target.
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_lisp.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_lisp.dir/all: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_image_cmd.dir/all
+motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_lisp.dir/all: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/all
 	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_lisp.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_lisp.dir/depend
 	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_lisp.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=24 "Built target motor_cam_tutorial_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=25 "Built target motor_cam_tutorial_generate_messages_lisp"
 .PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2241,7 +2316,7 @@ motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_geneus.dir/all: motor_cam_tutor
 
 # Build rule for subdir invocation for target.
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_geneus.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_geneus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_geneus.dir/rule
@@ -2299,6 +2374,7 @@ clean: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_genlisp.dir/clean
 # All Build rule for target.
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_nodejs.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_nodejs.dir/all: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_image_cmd.dir/all
+motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_nodejs.dir/all: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/all
 	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_nodejs.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_nodejs.dir/depend
 	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_nodejs.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target motor_cam_tutorial_generate_messages_nodejs"
@@ -2332,9 +2408,10 @@ clean: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_nodejs
 # All Build rule for target.
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py.dir/all: beginner_tutorials/CMakeFiles/std_msgs_generate_messages_py.dir/all
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py.dir/all: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_image_cmd.dir/all
+motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py.dir/all: motor_cam_tutorial/CMakeFiles/_motor_cam_tutorial_generate_messages_check_deps_mot_cmd.dir/all
 	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py.dir/depend
 	$(MAKE) -f motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py.dir/build.make motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=25 "Built target motor_cam_tutorial_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=26 "Built target motor_cam_tutorial_generate_messages_py"
 .PHONY : motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2386,7 +2463,7 @@ my_image_mannager/preinstall:
 my_image_mannager/CMakeFiles/cam_subscriber.dir/all:
 	$(MAKE) -f my_image_mannager/CMakeFiles/cam_subscriber.dir/build.make my_image_mannager/CMakeFiles/cam_subscriber.dir/depend
 	$(MAKE) -f my_image_mannager/CMakeFiles/cam_subscriber.dir/build.make my_image_mannager/CMakeFiles/cam_subscriber.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target cam_subscriber"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=7 "Built target cam_subscriber"
 .PHONY : my_image_mannager/CMakeFiles/cam_subscriber.dir/all
 
 # Include target in all.
@@ -2396,7 +2473,7 @@ all: my_image_mannager/CMakeFiles/cam_subscriber.dir/all
 
 # Build rule for subdir invocation for target.
 my_image_mannager/CMakeFiles/cam_subscriber.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 my_image_mannager/CMakeFiles/cam_subscriber.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : my_image_mannager/CMakeFiles/cam_subscriber.dir/rule
@@ -2423,7 +2500,7 @@ clean: my_image_mannager/CMakeFiles/cam_subscriber.dir/clean
 my_image_mannager/CMakeFiles/cam_publisher.dir/all:
 	$(MAKE) -f my_image_mannager/CMakeFiles/cam_publisher.dir/build.make my_image_mannager/CMakeFiles/cam_publisher.dir/depend
 	$(MAKE) -f my_image_mannager/CMakeFiles/cam_publisher.dir/build.make my_image_mannager/CMakeFiles/cam_publisher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=7 "Built target cam_publisher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target cam_publisher"
 .PHONY : my_image_mannager/CMakeFiles/cam_publisher.dir/all
 
 # Include target in all.
@@ -2433,7 +2510,7 @@ all: my_image_mannager/CMakeFiles/cam_publisher.dir/all
 
 # Build rule for subdir invocation for target.
 my_image_mannager/CMakeFiles/cam_publisher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 my_image_mannager/CMakeFiles/cam_publisher.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : my_image_mannager/CMakeFiles/cam_publisher.dir/rule
@@ -2666,7 +2743,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_adding_images.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_adding_images.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_adding_images.launch.dir/rule
@@ -2731,7 +2808,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_fback_flow.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_fback_flow.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_fback_flow.launch.dir/rule
@@ -2796,7 +2873,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_lk_flow.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_lk_flow.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_lk_flow.launch.dir/rule
@@ -2861,7 +2938,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_face_detection.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_face_detection.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_face_detection.launch.dir/rule
@@ -2958,7 +3035,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_edge_detection.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_edge_detection.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_edge_detection.launch.dir/rule
@@ -3023,7 +3100,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_hsv_color_filter.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_hsv_color_filter.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_hsv_color_filter.launch.dir/rule
@@ -3120,7 +3197,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_segment_objects.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_segment_objects.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_segment_objects.launch.dir/rule
@@ -3185,7 +3262,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_hough_lines.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_hough_lines.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_hough_lines.launch.dir/rule
@@ -3250,7 +3327,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_simple_flow.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_simple_flow.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_simple_flow.launch.dir/rule
@@ -3315,7 +3392,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_find_contours.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_find_contours.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_find_contours.launch.dir/rule
@@ -3348,7 +3425,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_people_detect.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_people_detect.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_people_detect.launch.dir/rule
@@ -3477,7 +3554,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_goodfeature_track.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_goodfeature_track.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_goodfeature_track.launch.dir/rule
@@ -3542,7 +3619,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_convex_hull.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_convex_hull.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_convex_hull.launch.dir/rule
@@ -3575,7 +3652,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_discrete_fourier_transform.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_discrete_fourier_transform.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_discrete_fourier_transform.launch.dir/rule
@@ -3640,7 +3717,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_rgb_color_filter.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_rgb_color_filter.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_rgb_color_filter.launch.dir/rule
@@ -3673,7 +3750,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_smoothing.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_smoothing.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_smoothing.launch.dir/rule
@@ -3770,7 +3847,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_corner_harris.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_corner_harris.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_corner_harris.launch.dir/rule
@@ -3803,7 +3880,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_contour_moments.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_contour_moments.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_contour_moments.launch.dir/rule
@@ -4028,7 +4105,7 @@ clean: opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_Point2D.
 opencv_apps/CMakeFiles/opencv_apps_gencfg.dir/all:
 	$(MAKE) -f opencv_apps/CMakeFiles/opencv_apps_gencfg.dir/build.make opencv_apps/CMakeFiles/opencv_apps_gencfg.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/opencv_apps_gencfg.dir/build.make opencv_apps/CMakeFiles/opencv_apps_gencfg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=35,36,37,38,39,40,41,42 "Built target opencv_apps_gencfg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=36,37,38,39,40,41,42,43 "Built target opencv_apps_gencfg"
 .PHONY : opencv_apps/CMakeFiles/opencv_apps_gencfg.dir/all
 
 # Include target in all.
@@ -4071,7 +4148,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_camshift.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_camshift.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_camshift.launch.dir/rule
@@ -4136,7 +4213,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_general_contours.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_general_contours.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_general_contours.launch.dir/rule
@@ -4676,7 +4753,7 @@ opencv_apps/CMakeFiles/opencv_apps_generate_messages_cpp.dir/all: opencv_apps/CM
 opencv_apps/CMakeFiles/opencv_apps_generate_messages_cpp.dir/all: opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_MomentArrayStamped.dir/all
 	$(MAKE) -f opencv_apps/CMakeFiles/opencv_apps_generate_messages_cpp.dir/build.make opencv_apps/CMakeFiles/opencv_apps_generate_messages_cpp.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/opencv_apps_generate_messages_cpp.dir/build.make opencv_apps/CMakeFiles/opencv_apps_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=43,44,45,46,47,48,49,50,51,52 "Built target opencv_apps_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=44,45,46,47,48,49,50,51,52,53 "Built target opencv_apps_generate_messages_cpp"
 .PHONY : opencv_apps/CMakeFiles/opencv_apps_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5377,7 +5454,7 @@ all: opencv_apps/CMakeFiles/opencv_apps_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/opencv_apps_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 49
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/opencv_apps_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/opencv_apps_generate_messages.dir/rule
@@ -5410,7 +5487,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_hough_circles.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_hough_circles.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_hough_circles.launch.dir/rule
@@ -5470,12 +5547,12 @@ opencv_apps/CMakeFiles/opencv_apps_generate_messages_py.dir/all: opencv_apps/CMa
 opencv_apps/CMakeFiles/opencv_apps_generate_messages_py.dir/all: opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_MomentArrayStamped.dir/all
 	$(MAKE) -f opencv_apps/CMakeFiles/opencv_apps_generate_messages_py.dir/build.make opencv_apps/CMakeFiles/opencv_apps_generate_messages_py.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/opencv_apps_generate_messages_py.dir/build.make opencv_apps/CMakeFiles/opencv_apps_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=82,83,84,85,86,87,88,89,90,91,92 "Built target opencv_apps_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=83,84,85,86,87,88,89,90,91,92 "Built target opencv_apps_generate_messages_py"
 .PHONY : opencv_apps/CMakeFiles/opencv_apps_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/opencv_apps_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/opencv_apps_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/opencv_apps_generate_messages_py.dir/rule
@@ -5502,7 +5579,7 @@ clean: opencv_apps/CMakeFiles/opencv_apps_generate_messages_py.dir/clean
 opencv_apps/CMakeFiles/hough_circles_exe.dir/all:
 	$(MAKE) -f opencv_apps/CMakeFiles/hough_circles_exe.dir/build.make opencv_apps/CMakeFiles/hough_circles_exe.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/hough_circles_exe.dir/build.make opencv_apps/CMakeFiles/hough_circles_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=20 "Built target hough_circles_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target hough_circles_exe"
 .PHONY : opencv_apps/CMakeFiles/hough_circles_exe.dir/all
 
 # Include target in all.
@@ -5512,7 +5589,7 @@ all: opencv_apps/CMakeFiles/hough_circles_exe.dir/all
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/hough_circles_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/hough_circles_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/hough_circles_exe.dir/rule
@@ -5577,7 +5654,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_phase_corr.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_phase_corr.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_phase_corr.launch.dir/rule
@@ -5732,7 +5809,7 @@ clean: opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_Point2DA
 opencv_apps/CMakeFiles/edge_detection_exe.dir/all:
 	$(MAKE) -f opencv_apps/CMakeFiles/edge_detection_exe.dir/build.make opencv_apps/CMakeFiles/edge_detection_exe.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/edge_detection_exe.dir/build.make opencv_apps/CMakeFiles/edge_detection_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target edge_detection_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=12 "Built target edge_detection_exe"
 .PHONY : opencv_apps/CMakeFiles/edge_detection_exe.dir/all
 
 # Include target in all.
@@ -5742,7 +5819,7 @@ all: opencv_apps/CMakeFiles/edge_detection_exe.dir/all
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/edge_detection_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/edge_detection_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/edge_detection_exe.dir/rule
@@ -5833,7 +5910,7 @@ clean: opencv_apps/CMakeFiles/run_tests_opencv_apps_roslaunch-check__home_leone_
 opencv_apps/CMakeFiles/people_detect_exe.dir/all:
 	$(MAKE) -f opencv_apps/CMakeFiles/people_detect_exe.dir/build.make opencv_apps/CMakeFiles/people_detect_exe.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/people_detect_exe.dir/build.make opencv_apps/CMakeFiles/people_detect_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target people_detect_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=93 "Built target people_detect_exe"
 .PHONY : opencv_apps/CMakeFiles/people_detect_exe.dir/all
 
 # Include target in all.
@@ -5843,7 +5920,7 @@ all: opencv_apps/CMakeFiles/people_detect_exe.dir/all
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/people_detect_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/people_detect_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/people_detect_exe.dir/rule
@@ -5908,7 +5985,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_hls_color_filter.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_hls_color_filter.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_hls_color_filter.launch.dir/rule
@@ -6004,7 +6081,7 @@ clean: opencv_apps/CMakeFiles/adding_images_exe.dir/clean
 opencv_apps/CMakeFiles/corner_harris_exe.dir/all:
 	$(MAKE) -f opencv_apps/CMakeFiles/corner_harris_exe.dir/build.make opencv_apps/CMakeFiles/corner_harris_exe.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/corner_harris_exe.dir/build.make opencv_apps/CMakeFiles/corner_harris_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target corner_harris_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=11 "Built target corner_harris_exe"
 .PHONY : opencv_apps/CMakeFiles/corner_harris_exe.dir/all
 
 # Include target in all.
@@ -6014,7 +6091,7 @@ all: opencv_apps/CMakeFiles/corner_harris_exe.dir/all
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/corner_harris_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/corner_harris_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/corner_harris_exe.dir/rule
@@ -6138,7 +6215,7 @@ opencv_apps/CMakeFiles/opencv_apps_generate_messages_eus.dir/all: opencv_apps/CM
 opencv_apps/CMakeFiles/opencv_apps_generate_messages_eus.dir/all: opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_MomentArrayStamped.dir/all
 	$(MAKE) -f opencv_apps/CMakeFiles/opencv_apps_generate_messages_eus.dir/build.make opencv_apps/CMakeFiles/opencv_apps_generate_messages_eus.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/opencv_apps_generate_messages_eus.dir/build.make opencv_apps/CMakeFiles/opencv_apps_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=53,54,55,56,57,58,59,60,61,62 "Built target opencv_apps_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=54,55,56,57,58,59,60,61,62,63 "Built target opencv_apps_generate_messages_eus"
 .PHONY : opencv_apps/CMakeFiles/opencv_apps_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -6299,12 +6376,12 @@ opencv_apps/CMakeFiles/opencv_apps_generate_messages_lisp.dir/all: opencv_apps/C
 opencv_apps/CMakeFiles/opencv_apps_generate_messages_lisp.dir/all: opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_MomentArrayStamped.dir/all
 	$(MAKE) -f opencv_apps/CMakeFiles/opencv_apps_generate_messages_lisp.dir/build.make opencv_apps/CMakeFiles/opencv_apps_generate_messages_lisp.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/opencv_apps_generate_messages_lisp.dir/build.make opencv_apps/CMakeFiles/opencv_apps_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=63,64,65,66,67,68,69,70,71,72 "Built target opencv_apps_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=64,65,66,67,68,69,70,71,72 "Built target opencv_apps_generate_messages_lisp"
 .PHONY : opencv_apps/CMakeFiles/opencv_apps_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/opencv_apps_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/opencv_apps_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/opencv_apps_generate_messages_lisp.dir/rule
@@ -6337,7 +6414,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_watershed_segmentation.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_watershed_segmentation.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_watershed_segmentation.launch.dir/rule
@@ -6401,7 +6478,7 @@ opencv_apps/CMakeFiles/opencv_apps_genlisp.dir/all: opencv_apps/CMakeFiles/openc
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/opencv_apps_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/opencv_apps_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/opencv_apps_genlisp.dir/rule
@@ -6493,12 +6570,12 @@ opencv_apps/CMakeFiles/opencv_apps_generate_messages_nodejs.dir/all: opencv_apps
 opencv_apps/CMakeFiles/opencv_apps_generate_messages_nodejs.dir/all: opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_MomentArrayStamped.dir/all
 	$(MAKE) -f opencv_apps/CMakeFiles/opencv_apps_generate_messages_nodejs.dir/build.make opencv_apps/CMakeFiles/opencv_apps_generate_messages_nodejs.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/opencv_apps_generate_messages_nodejs.dir/build.make opencv_apps/CMakeFiles/opencv_apps_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=73,74,75,76,77,78,79,80,81 "Built target opencv_apps_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=73,74,75,76,77,78,79,80,81,82 "Built target opencv_apps_generate_messages_nodejs"
 .PHONY : opencv_apps/CMakeFiles/opencv_apps_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/opencv_apps_generate_messages_nodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/opencv_apps_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/opencv_apps_generate_messages_nodejs.dir/rule
@@ -6525,7 +6602,7 @@ clean: opencv_apps/CMakeFiles/opencv_apps_generate_messages_nodejs.dir/clean
 opencv_apps/CMakeFiles/phase_corr_exe.dir/all:
 	$(MAKE) -f opencv_apps/CMakeFiles/phase_corr_exe.dir/build.make opencv_apps/CMakeFiles/phase_corr_exe.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/phase_corr_exe.dir/build.make opencv_apps/CMakeFiles/phase_corr_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=93 "Built target phase_corr_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target phase_corr_exe"
 .PHONY : opencv_apps/CMakeFiles/phase_corr_exe.dir/all
 
 # Include target in all.
@@ -6535,7 +6612,7 @@ all: opencv_apps/CMakeFiles/phase_corr_exe.dir/all
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/phase_corr_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/phase_corr_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/phase_corr_exe.dir/rule
@@ -6567,7 +6644,7 @@ opencv_apps/CMakeFiles/opencv_apps_genpy.dir/all: opencv_apps/CMakeFiles/opencv_
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/opencv_apps_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/opencv_apps_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/opencv_apps_genpy.dir/rule
@@ -6599,7 +6676,7 @@ opencv_apps/CMakeFiles/opencv_apps_gennodejs.dir/all: opencv_apps/CMakeFiles/ope
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/opencv_apps_gennodejs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/opencv_apps_gennodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/opencv_apps_gennodejs.dir/rule
@@ -6626,7 +6703,7 @@ clean: opencv_apps/CMakeFiles/opencv_apps_gennodejs.dir/clean
 opencv_apps/CMakeFiles/discrete_fourier_transform_exe.dir/all:
 	$(MAKE) -f opencv_apps/CMakeFiles/discrete_fourier_transform_exe.dir/build.make opencv_apps/CMakeFiles/discrete_fourier_transform_exe.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/discrete_fourier_transform_exe.dir/build.make opencv_apps/CMakeFiles/discrete_fourier_transform_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=11 "Built target discrete_fourier_transform_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target discrete_fourier_transform_exe"
 .PHONY : opencv_apps/CMakeFiles/discrete_fourier_transform_exe.dir/all
 
 # Include target in all.
@@ -6636,7 +6713,7 @@ all: opencv_apps/CMakeFiles/discrete_fourier_transform_exe.dir/all
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/discrete_fourier_transform_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/discrete_fourier_transform_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/discrete_fourier_transform_exe.dir/rule
@@ -6812,7 +6889,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_threshold.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_threshold.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_threshold.launch.dir/rule
@@ -6845,7 +6922,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_face_recognition.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_face_recognition.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_face_recognition.launch.dir/rule
@@ -6973,7 +7050,7 @@ clean: opencv_apps/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/clea
 opencv_apps/CMakeFiles/hls_color_filter_exe.dir/all:
 	$(MAKE) -f opencv_apps/CMakeFiles/hls_color_filter_exe.dir/build.make opencv_apps/CMakeFiles/hls_color_filter_exe.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/hls_color_filter_exe.dir/build.make opencv_apps/CMakeFiles/hls_color_filter_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target hls_color_filter_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=20 "Built target hls_color_filter_exe"
 .PHONY : opencv_apps/CMakeFiles/hls_color_filter_exe.dir/all
 
 # Include target in all.
@@ -6983,7 +7060,7 @@ all: opencv_apps/CMakeFiles/hls_color_filter_exe.dir/all
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/hls_color_filter_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/hls_color_filter_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/hls_color_filter_exe.dir/rule
@@ -7233,7 +7310,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_pyramids.launch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_pyramids.launch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_pyramids.launch.dir/rule
@@ -7371,7 +7448,7 @@ clean: opencv_apps/CMakeFiles/goodfeature_track_exe.dir/clean
 opencv_apps/CMakeFiles/face_detection_exe.dir/all:
 	$(MAKE) -f opencv_apps/CMakeFiles/face_detection_exe.dir/build.make opencv_apps/CMakeFiles/face_detection_exe.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/face_detection_exe.dir/build.make opencv_apps/CMakeFiles/face_detection_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target face_detection_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=13 "Built target face_detection_exe"
 .PHONY : opencv_apps/CMakeFiles/face_detection_exe.dir/all
 
 # Include target in all.
@@ -7381,7 +7458,7 @@ all: opencv_apps/CMakeFiles/face_detection_exe.dir/all
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/face_detection_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/face_detection_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/face_detection_exe.dir/rule
@@ -7440,7 +7517,7 @@ clean: opencv_apps/CMakeFiles/_opencv_apps_generate_messages_check_deps_LineArra
 opencv_apps/CMakeFiles/face_recognition_exe.dir/all:
 	$(MAKE) -f opencv_apps/CMakeFiles/face_recognition_exe.dir/build.make opencv_apps/CMakeFiles/face_recognition_exe.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/face_recognition_exe.dir/build.make opencv_apps/CMakeFiles/face_recognition_exe.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=13 "Built target face_recognition_exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target face_recognition_exe"
 .PHONY : opencv_apps/CMakeFiles/face_recognition_exe.dir/all
 
 # Include target in all.
@@ -7450,7 +7527,7 @@ all: opencv_apps/CMakeFiles/face_recognition_exe.dir/all
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/face_recognition_exe.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/face_recognition_exe.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/face_recognition_exe.dir/rule
@@ -7515,7 +7592,7 @@ opencv_apps/CMakeFiles/opencv_apps.dir/all: opencv_apps/CMakeFiles/opencv_apps_g
 opencv_apps/CMakeFiles/opencv_apps.dir/all: opencv_apps/CMakeFiles/opencv_apps_generate_messages_cpp.dir/all
 	$(MAKE) -f opencv_apps/CMakeFiles/opencv_apps.dir/build.make opencv_apps/CMakeFiles/opencv_apps.dir/depend
 	$(MAKE) -f opencv_apps/CMakeFiles/opencv_apps.dir/build.make opencv_apps/CMakeFiles/opencv_apps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=26,27,28,29,30,31,32,33,34 "Built target opencv_apps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=27,28,29,30,31,32,33,34,35 "Built target opencv_apps"
 .PHONY : opencv_apps/CMakeFiles/opencv_apps.dir/all
 
 # Include target in all.
@@ -7696,7 +7773,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps.dir/all: opencv_apps/test/CMakeFil
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps.dir/rule
@@ -7902,7 +7979,7 @@ opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check.dir/all: opencv_ap
 
 # Build rule for subdir invocation for target.
 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/CMakeFiles/_run_tests_opencv_apps_roslaunch-check.dir/rule
@@ -8106,7 +8183,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-threshold.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-threshold.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-threshold.test.dir/rule
@@ -8235,7 +8312,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-face_detection.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-face_detection.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-face_detection.test.dir/rule
@@ -8300,7 +8377,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-lk_flow.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-lk_flow.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-lk_flow.test.dir/rule
@@ -8365,7 +8442,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-fback_flow.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-fback_flow.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-fback_flow.test.dir/rule
@@ -8462,7 +8539,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-simple_flow.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-simple_flow.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-simple_flow.test.dir/rule
@@ -8527,7 +8604,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-discrete_fourier_transform.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-discrete_fourier_transform.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-discrete_fourier_transform.test.dir/rule
@@ -8560,7 +8637,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-smoothing.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-smoothing.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-smoothing.test.dir/rule
@@ -8625,7 +8702,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-hough_lines.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-hough_lines.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-hough_lines.test.dir/rule
@@ -8658,7 +8735,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_recognition
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_recognition__gui_false__use_opencv3_true__use_opencv3_3_true.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_recognition__gui_false__use_opencv3_true__use_opencv3_3_true.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_recognition__gui_false__use_opencv3_true__use_opencv3_3_true.test.dir/rule
@@ -8691,7 +8768,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-pyramids.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-pyramids.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-pyramids.test.dir/rule
@@ -8820,7 +8897,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-general_contours
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-general_contours__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-general_contours__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-general_contours__gui_false.test.dir/rule
@@ -8853,7 +8930,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-convex_hull__gui
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-convex_hull__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-convex_hull__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-convex_hull__gui_false.test.dir/rule
@@ -8886,7 +8963,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-find_contours__g
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-find_contours__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-find_contours__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-find_contours__gui_false.test.dir/rule
@@ -8919,7 +8996,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-threshold__gui_f
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-threshold__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-threshold__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-threshold__gui_false.test.dir/rule
@@ -8952,7 +9029,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hough_circles__g
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hough_circles__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hough_circles__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hough_circles__gui_false.test.dir/rule
@@ -8985,7 +9062,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-face_recognition.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-face_recognition.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-face_recognition.test.dir/rule
@@ -9050,7 +9127,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-smoothing__gui_f
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-smoothing__gui_false.test.dir/rule
@@ -9083,7 +9160,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-fback_flow__gui_
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-fback_flow__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-fback_flow__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-fback_flow__gui_false.test.dir/rule
@@ -9116,7 +9193,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-adding_images__g
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-adding_images__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-adding_images__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-adding_images__gui_false.test.dir/rule
@@ -9433,7 +9510,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-discrete_fourier
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-discrete_fourier_transform__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-discrete_fourier_transform__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-discrete_fourier_transform__gui_false.test.dir/rule
@@ -9466,7 +9543,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_3_true.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_3_true.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-face_detection__gui_false__use_opencv3_true__use_opencv3_3_true.test.dir/rule
@@ -9558,7 +9635,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest.dir/all: opencv_apps/
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest.dir/rule
@@ -9591,7 +9668,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-lk_flow__gui_fal
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-lk_flow__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-lk_flow__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-lk_flow__gui_false.test.dir/rule
@@ -9624,7 +9701,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-simple_example.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-simple_example.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-simple_example.test.dir/rule
@@ -9657,7 +9734,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-camshift__gui_fa
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-camshift__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-camshift__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-camshift__gui_false.test.dir/rule
@@ -9754,7 +9831,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-phase_corr__gui_
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-phase_corr__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-phase_corr__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-phase_corr__gui_false.test.dir/rule
@@ -9787,7 +9864,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-phase_corr.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-phase_corr.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-phase_corr.test.dir/rule
@@ -9820,7 +9897,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-goodfeature_track.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-goodfeature_track.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-goodfeature_track.test.dir/rule
@@ -9911,12 +9988,12 @@ clean: opencv_apps/test/CMakeFiles/run_tests_opencv_apps_roslaunch-check__home_l
 opencv_apps/test/CMakeFiles/face_data.dir/all:
 	$(MAKE) -f opencv_apps/test/CMakeFiles/face_data.dir/build.make opencv_apps/test/CMakeFiles/face_data.dir/depend
 	$(MAKE) -f opencv_apps/test/CMakeFiles/face_data.dir/build.make opencv_apps/test/CMakeFiles/face_data.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=12 "Built target face_data"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num= "Built target face_data"
 .PHONY : opencv_apps/test/CMakeFiles/face_data.dir/all
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/face_data.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/face_data.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/face_data.dir/rule
@@ -9949,7 +10026,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-goodfeature_trac
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-goodfeature_track__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-goodfeature_track__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-goodfeature_track__gui_false.test.dir/rule
@@ -9982,7 +10059,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-contour_moments_
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-contour_moments__gui_false.test.dir/rule
@@ -10015,7 +10092,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-corner_harris.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-corner_harris.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-corner_harris.test.dir/rule
@@ -10112,7 +10189,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-pyramids__gui_fa
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-pyramids__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-pyramids__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-pyramids__gui_false.test.dir/rule
@@ -10209,7 +10286,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-watershed_segmen
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-watershed_segmentation__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-watershed_segmentation__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-watershed_segmentation__gui_false.test.dir/rule
@@ -10274,7 +10351,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-people_detect__g
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-people_detect__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-people_detect__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-people_detect__gui_false.test.dir/rule
@@ -10339,7 +10416,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hsv_color_filter
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hsv_color_filter__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hsv_color_filter__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hsv_color_filter__gui_false.test.dir/rule
@@ -10372,7 +10449,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-simple_compresse
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-simple_compressed_example__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-simple_compressed_example__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-simple_compressed_example__gui_false.test.dir/rule
@@ -10405,7 +10482,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-rgb_color_filter.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-rgb_color_filter.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-rgb_color_filter.test.dir/rule
@@ -10470,7 +10547,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-rgb_color_filter
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-rgb_color_filter__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-rgb_color_filter__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-rgb_color_filter__gui_false.test.dir/rule
@@ -10567,7 +10644,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-camshift.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-camshift.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-camshift.test.dir/rule
@@ -10600,7 +10677,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hls_color_filter
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hls_color_filter__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hls_color_filter__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hls_color_filter__gui_false.test.dir/rule
@@ -10633,7 +10710,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-convex_hull.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-convex_hull.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-convex_hull.test.dir/rule
@@ -10762,7 +10839,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-simple_example__
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-simple_example__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-simple_example__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-simple_example__gui_false.test.dir/rule
@@ -10891,7 +10968,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hough_lines__gui
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hough_lines__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hough_lines__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-hough_lines__gui_false.test.dir/rule
@@ -10924,7 +11001,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-segment_objects_
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-segment_objects__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-segment_objects__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-segment_objects__gui_false.test.dir/rule
@@ -11053,7 +11130,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-adding_images.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-adding_images.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-adding_images.test.dir/rule
@@ -11086,7 +11163,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-simple_flow__gui
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-simple_flow__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-simple_flow__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-simple_flow__gui_false.test.dir/rule
@@ -11247,7 +11324,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-edge_detection__
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-edge_detection__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-edge_detection__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-edge_detection__gui_false.test.dir/rule
@@ -11280,7 +11357,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-segment_objects.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-segment_objects.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-segment_objects.test.dir/rule
@@ -11313,7 +11390,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-find_contours.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-find_contours.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-find_contours.test.dir/rule
@@ -11346,7 +11423,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-hsv_color_filter.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-hsv_color_filter.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-hsv_color_filter.test.dir/rule
@@ -11379,7 +11456,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-people_detect.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-people_detect.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-people_detect.test.dir/rule
@@ -11636,7 +11713,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-edge_detection.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-edge_detection.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-edge_detection.test.dir/rule
@@ -11669,7 +11746,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-hls_color_filter.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-hls_color_filter.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-hls_color_filter.test.dir/rule
@@ -11766,7 +11843,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-contour_moments.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-contour_moments.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-contour_moments.test.dir/rule
@@ -11799,7 +11876,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-watershed_segmentation.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-watershed_segmentation.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-watershed_segmentation.test.dir/rule
@@ -11864,7 +11941,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-general_contours.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-general_contours.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-general_contours.test.dir/rule
@@ -11929,7 +12006,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-simple_compressed_example.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-simple_compressed_example.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-simple_compressed_example.test.dir/rule
@@ -11962,7 +12039,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-corner_harris__g
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-corner_harris__gui_false.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-corner_harris__gui_false.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_rostest_test-corner_harris__gui_false.test.dir/rule
@@ -12027,7 +12104,7 @@ opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_c
 
 # Build rule for subdir invocation for target.
 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-hough_circles.test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-hough_circles.test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leone/catkin_ws/build/CMakeFiles 0
 .PHONY : opencv_apps/test/CMakeFiles/_run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_test_test-hough_circles.test.dir/rule

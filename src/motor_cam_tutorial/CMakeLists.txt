@@ -52,11 +52,10 @@ find_package(OpenCV REQUIRED)
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-#   Message1.msg
-#   Message2.msg
-# )
+ add_message_files(
+   FILES
+   mot_cmd.msg
+ )
 
 ## Generate services in the 'srv' folder
  add_service_files(
@@ -211,3 +210,7 @@ add_dependencies(cam_pub motor_cam_tutorial_generate_messages_cpp)
 add_executable(controller src/controller.cpp)
 target_link_libraries(controller ${catkin_LIBRARIES} ${OpenCV_LIBS})
 add_dependencies(controller motor_cam_tutorial_generate_messages_cpp)
+
+add_executable(controller_msg src/controller_msg.cpp)
+target_link_libraries(controller_msg ${catkin_LIBRARIES} ${OpenCV_LIBS})
+add_dependencies(controller_msg motor_cam_tutorial_generate_messages_cpp)

@@ -33,6 +33,10 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/motor_cam_tutorial/msg" TYPE FILE FILES "/home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg")
+endif()
+
+if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/motor_cam_tutorial/srv" TYPE FILE FILES "/home/leone/catkin_ws/src/motor_cam_tutorial/srv/image_cmd.srv")
 endif()
 

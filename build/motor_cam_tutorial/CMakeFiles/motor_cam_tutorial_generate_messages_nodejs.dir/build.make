@@ -53,15 +53,22 @@ CMAKE_BINARY_DIR = /home/leone/catkin_ws/build
 # Include the progress variables for this target.
 include motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_nodejs.dir/progress.make
 
+motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_nodejs: /home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/msg/mot_cmd.js
 motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_nodejs: /home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/srv/image_cmd.js
 
 
+/home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/msg/mot_cmd.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
+/home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/msg/mot_cmd.js: /home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from motor_cam_tutorial/mot_cmd.msg"
+	cd /home/leone/catkin_ws/build/motor_cam_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/leone/catkin_ws/src/motor_cam_tutorial/msg/mot_cmd.msg -Imotor_cam_tutorial:/home/leone/catkin_ws/src/motor_cam_tutorial/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p motor_cam_tutorial -o /home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/msg
+
 /home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/srv/image_cmd.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/srv/image_cmd.js: /home/leone/catkin_ws/src/motor_cam_tutorial/srv/image_cmd.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from motor_cam_tutorial/image_cmd.srv"
-	cd /home/leone/catkin_ws/build/motor_cam_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/leone/catkin_ws/src/motor_cam_tutorial/srv/image_cmd.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p motor_cam_tutorial -o /home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/leone/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Javascript code from motor_cam_tutorial/image_cmd.srv"
+	cd /home/leone/catkin_ws/build/motor_cam_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/leone/catkin_ws/src/motor_cam_tutorial/srv/image_cmd.srv -Imotor_cam_tutorial:/home/leone/catkin_ws/src/motor_cam_tutorial/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p motor_cam_tutorial -o /home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/srv
 
 motor_cam_tutorial_generate_messages_nodejs: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_nodejs
+motor_cam_tutorial_generate_messages_nodejs: /home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/msg/mot_cmd.js
 motor_cam_tutorial_generate_messages_nodejs: /home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/srv/image_cmd.js
 motor_cam_tutorial_generate_messages_nodejs: motor_cam_tutorial/CMakeFiles/motor_cam_tutorial_generate_messages_nodejs.dir/build.make
 

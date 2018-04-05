@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/motor_cam_tutorial_generate_messages_cpp"
+  "/home/leone/catkin_ws/devel/include/motor_cam_tutorial/mot_cmd.h"
   "/home/leone/catkin_ws/devel/include/motor_cam_tutorial/image_cmd.h"
 )
 
