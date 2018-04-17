@@ -120,7 +120,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/leone/catkin_ws/build/beginner_tutorials/cmake_install.cmake")
   include("/home/leone/catkin_ws/build/dummy/cmake_install.cmake")
   include("/home/leone/catkin_ws/build/motor_cam_tutorial/cmake_install.cmake")
-  include("/home/leone/catkin_ws/build/my_image_mannager/cmake_install.cmake")
+  include("/home/leone/catkin_ws/build/picture_server/cmake_install.cmake")
   include("/home/leone/catkin_ws/build/opencv_apps/cmake_install.cmake")
 
 endif()

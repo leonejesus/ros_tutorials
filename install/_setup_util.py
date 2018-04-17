@@ -262,7 +262,7 @@ if __name__ == '__main__':
             sys.exit(1)
 
         # environment at generation time
-        CMAKE_PREFIX_PATH = '/home/leone/catkin_ws/devel;/opt/ros/kinetic;/home/leone/rock/tools/rest_api;/home/leone/rock/control/ruby_sdformat;/home/leone/rock/tools/utilrb;/home/leone/rock/tools/orogen;/home/leone/rock/install;/home/leone/rock/tools/rest_api;/home/leone/rock/control/ruby_sdformat;/home/leone/rock/tools/utilrb;/home/leone/rock/tools/orogen;/home/leone/rock/install'.split(';')
+        CMAKE_PREFIX_PATH = '/opt/ros/kinetic;/home/leone/rock/tools/rest_api;/home/leone/rock/control/ruby_sdformat;/home/leone/rock/tools/utilrb;/home/leone/rock/tools/orogen;/home/leone/rock/install;/home/leone/rock/tools/rest_api;/home/leone/rock/control/ruby_sdformat;/home/leone/rock/tools/utilrb;/home/leone/rock/tools/orogen;/home/leone/rock/install'.split(';')
         # prepend current workspace if not already part of CPP
         base_path = os.path.dirname(__file__)
         if base_path not in CMAKE_PREFIX_PATH:

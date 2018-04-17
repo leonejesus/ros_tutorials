@@ -1,2 +1,2 @@
-beginner_tutorials:dummy:motor_cam_tutorial:my_image_mannager:opencv_apps
+beginner_tutorials:dummy:motor_cam_tutorial:opencv_apps:picture_server
 -DCATKIN_DEVEL_PREFIX=/home/leone/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/leone/catkin_ws/install -G Unix Makefiles

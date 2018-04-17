@@ -62,6 +62,7 @@ df18deed79dec52ca16f6135d701e086 /home/leone/catkin_ws/devel/include/opencv_apps
 3bfa8414613f5899008968349c2cec6c /home/leone/catkin_ws/devel/include/opencv_apps/SmoothingConfig.h
 d3128341759ffe4ba6e2973bfd27cdb3 /home/leone/catkin_ws/devel/include/opencv_apps/ThresholdConfig.h
 d177840ed46dd7d498b0d60bec5532c2 /home/leone/catkin_ws/devel/include/opencv_apps/WatershedSegmentationConfig.h
+1c401aa8aca89a60414b7cd95089b95a /home/leone/catkin_ws/devel/include/picture_server/image_cmd.h
 19b5e1afc3bea6af649b07e3e4ae251f /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/_Num.py
 81b3fd44796ed0ba529434efe4a124aa /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/msg/__init__.py
 e1895c7380de95467dc7e7e009434ac1 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/beginner_tutorials/srv/_AddTwoInts.py
@@ -104,6 +105,8 @@ f65862b3abb994aceeac13e58e5dabbe /home/leone/catkin_ws/devel/lib/python2.7/dist-
 e39232f964bb9e616c251b5d9d5f9292 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/opencv_apps/msg/__init__.py
 3abccb97d8babe597de939895fe02786 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/opencv_apps/srv/_FaceRecognitionTrain.py
 bf797ddd7d48b274893a538a9b099721 /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/opencv_apps/srv/__init__.py
+3963d1b4709febca809ded3965332bcd /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/picture_server/srv/__init__.py
+e329fe8a5cdce5ba775ac7f60930528b /home/leone/catkin_ws/devel/lib/python2.7/dist-packages/picture_server/srv/_image_cmd.py
 dbe027cfe21bb96697ac5229e10d3511 /home/leone/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/msg/Num.lisp
 2135581d8b1d378cf05ff4ccb6a02ce9 /home/leone/catkin_ws/devel/share/common-lisp/ros/beginner_tutorials/srv/AddTwoInts.lisp
 542c58054cd689930ddccf8b542cd040 /home/leone/catkin_ws/devel/share/common-lisp/ros/motor_cam_tutorial/msg/mot_cmd.lisp
@@ -140,6 +143,7 @@ fd79f6a240b33c2ce03acbfd506df771 /home/leone/catkin_ws/devel/share/common-lisp/r
 8f7df97ce8026d54fd3bc2198474e40c /home/leone/catkin_ws/devel/share/common-lisp/ros/opencv_apps/msg/RotatedRectStamped.lisp
 6c23b045a3f27af4d1c002056672c59e /home/leone/catkin_ws/devel/share/common-lisp/ros/opencv_apps/msg/Size.lisp
 79e1d74b9fe44e52dbeaf176453103be /home/leone/catkin_ws/devel/share/common-lisp/ros/opencv_apps/srv/FaceRecognitionTrain.lisp
+dcad916ff198e060550a7e773c2f311b /home/leone/catkin_ws/devel/share/common-lisp/ros/picture_server/srv/image_cmd.lisp
 f1f572ebf2a0f190ba26dc6a2a8b897c /home/leone/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/msg/Num.js
 22cb77ebf49063f27b1f44bccdb8dda6 /home/leone/catkin_ws/devel/share/gennodejs/ros/beginner_tutorials/srv/AddTwoInts.js
 2cf185ca0e76db607f225274ad49b7b3 /home/leone/catkin_ws/devel/share/gennodejs/ros/motor_cam_tutorial/msg/mot_cmd.js
@@ -176,6 +180,7 @@ e253f22d250dcd42b9bb82232c3b8ce4 /home/leone/catkin_ws/devel/share/gennodejs/ros
 794d06a2ad357fc0d7795c32ca0c4f0f /home/leone/catkin_ws/devel/share/gennodejs/ros/opencv_apps/msg/RotatedRectStamped.js
 4c57a599c98f5804946631fe75f20937 /home/leone/catkin_ws/devel/share/gennodejs/ros/opencv_apps/msg/Size.js
 6573c127f1915c4e82bf5c5581158cbb /home/leone/catkin_ws/devel/share/gennodejs/ros/opencv_apps/srv/FaceRecognitionTrain.js
+8b37305c1c435f820de8bebe58fe3724 /home/leone/catkin_ws/devel/share/gennodejs/ros/picture_server/srv/image_cmd.js
 84fe50fa51d3b7516ceccb6801fdf088 /home/leone/catkin_ws/devel/share/roseus/ros/beginner_tutorials/manifest.l
 6fa94891d9fc876d676264cfd611ed93 /home/leone/catkin_ws/devel/share/roseus/ros/beginner_tutorials/msg/Num.l
 aa7d160f9f6adbeab558e4fe479ad595 /home/leone/catkin_ws/devel/share/roseus/ros/beginner_tutorials/srv/AddTwoInts.l
@@ -215,6 +220,8 @@ db2d2e0b3f1178e31508595381d5250c /home/leone/catkin_ws/devel/share/roseus/ros/op
 7f9f55c5185e8072338239d421276eae /home/leone/catkin_ws/devel/share/roseus/ros/opencv_apps/msg/RotatedRectStamped.l
 fd3404565136dfd681b2d8acf6f87cab /home/leone/catkin_ws/devel/share/roseus/ros/opencv_apps/msg/Size.l
 6f745bb1223ade370e85fd7655a5e8f8 /home/leone/catkin_ws/devel/share/roseus/ros/opencv_apps/srv/FaceRecognitionTrain.l
+f2a1b166aa1f93505af4e7b389745c18 /home/leone/catkin_ws/devel/share/roseus/ros/picture_server/manifest.l
+533b80ea62ee22685050b6dae4063a27 /home/leone/catkin_ws/devel/share/roseus/ros/picture_server/srv/image_cmd.l
 b00fe5039d080c20a00d3a89d097e4a1 /home/leone/catkin_ws/src/opencv_apps/test/face_data
 6c2bd6dfb9cd70f6cd1666bbf5e20e47 /home/leone/catkin_ws/src/opencv_apps/test/vslam_tutorial.bag
 53cdd7acd1d930cefdfdc3e3238a9049 CMakeFiles/clean_test_results
@@ -445,3 +452,9 @@ ad9785cc51facc85a8fcd04666101dee opencv_apps/test/CMakeFiles/run_tests_opencv_ap
 fe3e278737575d4a82f1fc1806f9af58 opencv_apps/test/CMakeFiles/run_tests_opencv_apps_rostest_test-watershed_segmentation__gui_false.test
 93a9fb944d44e533850c78aff3fa7d61 opencv_apps/test/CMakeFiles/vslam_tutorial.bag
 2e76ab1ac4c56da5a69eff04c2c2f7af opencv_apps/test/CMakeFiles/vslam_tutorial_bag
+ae59d987f81900560b91674f1a57272c picture_server/CMakeFiles/_picture_server_generate_messages_check_deps_image_cmd
+bbfad05c2ec43a3dc2af44eb99d6e60f picture_server/CMakeFiles/picture_server_generate_messages_cpp
+bbfad05c2ec43a3dc2af44eb99d6e60f picture_server/CMakeFiles/picture_server_generate_messages_eus
+bbfad05c2ec43a3dc2af44eb99d6e60f picture_server/CMakeFiles/picture_server_generate_messages_lisp
+bbfad05c2ec43a3dc2af44eb99d6e60f picture_server/CMakeFiles/picture_server_generate_messages_nodejs
+bbfad05c2ec43a3dc2af44eb99d6e60f picture_server/CMakeFiles/picture_server_generate_messages_py

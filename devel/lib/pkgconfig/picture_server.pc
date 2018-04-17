@@ -1,0 +1,8 @@
+prefix=/home/leone/catkin_ws/devel
+
+Name: picture_server
+Description: Description of picture_server
+Version: 0.0.0
+Cflags: -I/home/leone/catkin_ws/devel/include
+Libs: -L/home/leone/catkin_ws/devel/lib 
+Requires: 

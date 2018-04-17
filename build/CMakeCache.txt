@@ -415,6 +415,12 @@ opencv_apps_LIB_DEPENDS:STATIC=general;/opt/ros/kinetic/lib/libcv_bridge.so;gene
 //Value Computed by CMake
 opencv_apps_SOURCE_DIR:STATIC=/home/leone/catkin_ws/src/opencv_apps
 
+//Value Computed by CMake
+picture_server_BINARY_DIR:STATIC=/home/leone/catkin_ws/build/picture_server
+
+//Value Computed by CMake
+picture_server_SOURCE_DIR:STATIC=/home/leone/catkin_ws/src/picture_server
+
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/kinetic/share/pluginlib/cmake
 

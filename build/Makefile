@@ -1037,17 +1037,17 @@ motor_cam_tutorial_generate_messages_py/fast:
 .PHONY : motor_cam_tutorial_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named cam_subscriber
+# Target rules for targets named picture_server
 
 # Build rule for target.
-cam_subscriber: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cam_subscriber
-.PHONY : cam_subscriber
+picture_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 picture_server
+.PHONY : picture_server
 
 # fast build rule for target.
-cam_subscriber/fast:
-	$(MAKE) -f my_image_mannager/CMakeFiles/cam_subscriber.dir/build.make my_image_mannager/CMakeFiles/cam_subscriber.dir/build
-.PHONY : cam_subscriber/fast
+picture_server/fast:
+	$(MAKE) -f picture_server/CMakeFiles/picture_server.dir/build.make picture_server/CMakeFiles/picture_server.dir/build
+.PHONY : picture_server/fast
 
 #=============================================================================
 # Target rules for targets named cam_publisher
@@ -1059,8 +1059,164 @@ cam_publisher: cmake_check_build_system
 
 # fast build rule for target.
 cam_publisher/fast:
-	$(MAKE) -f my_image_mannager/CMakeFiles/cam_publisher.dir/build.make my_image_mannager/CMakeFiles/cam_publisher.dir/build
+	$(MAKE) -f picture_server/CMakeFiles/cam_publisher.dir/build.make picture_server/CMakeFiles/cam_publisher.dir/build
 .PHONY : cam_publisher/fast
+
+#=============================================================================
+# Target rules for targets named picture_server_genpy
+
+# Build rule for target.
+picture_server_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 picture_server_genpy
+.PHONY : picture_server_genpy
+
+# fast build rule for target.
+picture_server_genpy/fast:
+	$(MAKE) -f picture_server/CMakeFiles/picture_server_genpy.dir/build.make picture_server/CMakeFiles/picture_server_genpy.dir/build
+.PHONY : picture_server_genpy/fast
+
+#=============================================================================
+# Target rules for targets named picture_server_gencpp
+
+# Build rule for target.
+picture_server_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 picture_server_gencpp
+.PHONY : picture_server_gencpp
+
+# fast build rule for target.
+picture_server_gencpp/fast:
+	$(MAKE) -f picture_server/CMakeFiles/picture_server_gencpp.dir/build.make picture_server/CMakeFiles/picture_server_gencpp.dir/build
+.PHONY : picture_server_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named _picture_server_generate_messages_check_deps_image_cmd
+
+# Build rule for target.
+_picture_server_generate_messages_check_deps_image_cmd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _picture_server_generate_messages_check_deps_image_cmd
+.PHONY : _picture_server_generate_messages_check_deps_image_cmd
+
+# fast build rule for target.
+_picture_server_generate_messages_check_deps_image_cmd/fast:
+	$(MAKE) -f picture_server/CMakeFiles/_picture_server_generate_messages_check_deps_image_cmd.dir/build.make picture_server/CMakeFiles/_picture_server_generate_messages_check_deps_image_cmd.dir/build
+.PHONY : _picture_server_generate_messages_check_deps_image_cmd/fast
+
+#=============================================================================
+# Target rules for targets named picture_server_gennodejs
+
+# Build rule for target.
+picture_server_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 picture_server_gennodejs
+.PHONY : picture_server_gennodejs
+
+# fast build rule for target.
+picture_server_gennodejs/fast:
+	$(MAKE) -f picture_server/CMakeFiles/picture_server_gennodejs.dir/build.make picture_server/CMakeFiles/picture_server_gennodejs.dir/build
+.PHONY : picture_server_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named picture_server_generate_messages_cpp
+
+# Build rule for target.
+picture_server_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 picture_server_generate_messages_cpp
+.PHONY : picture_server_generate_messages_cpp
+
+# fast build rule for target.
+picture_server_generate_messages_cpp/fast:
+	$(MAKE) -f picture_server/CMakeFiles/picture_server_generate_messages_cpp.dir/build.make picture_server/CMakeFiles/picture_server_generate_messages_cpp.dir/build
+.PHONY : picture_server_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named picture_server_generate_messages_eus
+
+# Build rule for target.
+picture_server_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 picture_server_generate_messages_eus
+.PHONY : picture_server_generate_messages_eus
+
+# fast build rule for target.
+picture_server_generate_messages_eus/fast:
+	$(MAKE) -f picture_server/CMakeFiles/picture_server_generate_messages_eus.dir/build.make picture_server/CMakeFiles/picture_server_generate_messages_eus.dir/build
+.PHONY : picture_server_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named picture_server_geneus
+
+# Build rule for target.
+picture_server_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 picture_server_geneus
+.PHONY : picture_server_geneus
+
+# fast build rule for target.
+picture_server_geneus/fast:
+	$(MAKE) -f picture_server/CMakeFiles/picture_server_geneus.dir/build.make picture_server/CMakeFiles/picture_server_geneus.dir/build
+.PHONY : picture_server_geneus/fast
+
+#=============================================================================
+# Target rules for targets named picture_server_generate_messages_py
+
+# Build rule for target.
+picture_server_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 picture_server_generate_messages_py
+.PHONY : picture_server_generate_messages_py
+
+# fast build rule for target.
+picture_server_generate_messages_py/fast:
+	$(MAKE) -f picture_server/CMakeFiles/picture_server_generate_messages_py.dir/build.make picture_server/CMakeFiles/picture_server_generate_messages_py.dir/build
+.PHONY : picture_server_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named picture_server_generate_messages_lisp
+
+# Build rule for target.
+picture_server_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 picture_server_generate_messages_lisp
+.PHONY : picture_server_generate_messages_lisp
+
+# fast build rule for target.
+picture_server_generate_messages_lisp/fast:
+	$(MAKE) -f picture_server/CMakeFiles/picture_server_generate_messages_lisp.dir/build.make picture_server/CMakeFiles/picture_server_generate_messages_lisp.dir/build
+.PHONY : picture_server_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named picture_server_genlisp
+
+# Build rule for target.
+picture_server_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 picture_server_genlisp
+.PHONY : picture_server_genlisp
+
+# fast build rule for target.
+picture_server_genlisp/fast:
+	$(MAKE) -f picture_server/CMakeFiles/picture_server_genlisp.dir/build.make picture_server/CMakeFiles/picture_server_genlisp.dir/build
+.PHONY : picture_server_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named picture_server_generate_messages
+
+# Build rule for target.
+picture_server_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 picture_server_generate_messages
+.PHONY : picture_server_generate_messages
+
+# fast build rule for target.
+picture_server_generate_messages/fast:
+	$(MAKE) -f picture_server/CMakeFiles/picture_server_generate_messages.dir/build.make picture_server/CMakeFiles/picture_server_generate_messages.dir/build
+.PHONY : picture_server_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named picture_server_generate_messages_nodejs
+
+# Build rule for target.
+picture_server_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 picture_server_generate_messages_nodejs
+.PHONY : picture_server_generate_messages_nodejs
+
+# fast build rule for target.
+picture_server_generate_messages_nodejs/fast:
+	$(MAKE) -f picture_server/CMakeFiles/picture_server_generate_messages_nodejs.dir/build.make picture_server/CMakeFiles/picture_server_generate_messages_nodejs.dir/build
+.PHONY : picture_server_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named _run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_adding_images.launch
@@ -4678,8 +4834,20 @@ help:
 	@echo "... motor_cam_tutorial_genlisp"
 	@echo "... motor_cam_tutorial_generate_messages_nodejs"
 	@echo "... motor_cam_tutorial_generate_messages_py"
-	@echo "... cam_subscriber"
+	@echo "... picture_server"
 	@echo "... cam_publisher"
+	@echo "... picture_server_genpy"
+	@echo "... picture_server_gencpp"
+	@echo "... _picture_server_generate_messages_check_deps_image_cmd"
+	@echo "... picture_server_gennodejs"
+	@echo "... picture_server_generate_messages_cpp"
+	@echo "... picture_server_generate_messages_eus"
+	@echo "... picture_server_geneus"
+	@echo "... picture_server_generate_messages_py"
+	@echo "... picture_server_generate_messages_lisp"
+	@echo "... picture_server_genlisp"
+	@echo "... picture_server_generate_messages"
+	@echo "... picture_server_generate_messages_nodejs"
 	@echo "... _run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_adding_images.launch"
 	@echo "... run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_adding_images.launch"
 	@echo "... _run_tests_opencv_apps_roslaunch-check__home_leone_catkin_ws_src_opencv_apps_launch_fback_flow.launch"
